@@ -75,7 +75,6 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="IVR TARDIAS Y FALLIDAS" sap:VirtualizedContainerService.HintSize="1225.33333333333,11353.3333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -212,7 +211,7 @@
     </Sequence>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1163.33333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_4">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462,313.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_60">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462,316" sap2010:WorkflowViewState.IdRef="Sequence_60">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -301,7 +300,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[vDttProveedores]" DisplayName="Read Range carteras" sap:VirtualizedContainerService.HintSize="1163.33333333333,96.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="TodasLasCarteras" WorkbookPath="Carteras.xlsx">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[vDttProveedores]" DisplayName="Read Range carteras" sap:VirtualizedContainerService.HintSize="1163.33333333333,96.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="CargaIvrTardias" WorkbookPath="\\192.168.108.76\d\RPA UIPATH\01. DESCARGA DE CRM SCORE\P1_CRM_CARTERAS_EC_GEST_TEL_MAIL.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
