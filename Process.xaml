@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Process" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1833.33333333333,11380.6666666667" sap2010:WorkflowViewState.IdRef="Process_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Process" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1833.33333333333,11418" sap2010:WorkflowViewState.IdRef="Process_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -78,7 +78,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="IVR TARDIAS Y FALLIDAS" sap:VirtualizedContainerService.HintSize="1225.33333333333,11316" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="IVR TARDIAS Y FALLIDAS" sap:VirtualizedContainerService.HintSize="1225.33333333333,11353.3333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="vStrUsername" />
       <Variable x:TypeArguments="ss:SecureString" Name="vScsPassword" />
@@ -212,7 +212,7 @@
     </Sequence>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1163.33333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_4">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462,348" sap2010:WorkflowViewState.IdRef="Sequence_60">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462,313.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_60">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -311,7 +311,7 @@
     </ui:ReadRange>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1163.33333333333,104.666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;-----Se lee el excel-----&quot;]" />
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Score_lat" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1163.33333333333,195.333333333333" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[vScsPassword]" Username="[vStrUsername]" />
-    <Sequence DisplayName="IVR Salidas Tardias" sap:VirtualizedContainerService.HintSize="1163.33333333333,8969.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="IVR Salidas Tardias" sap:VirtualizedContainerService.HintSize="1163.33333333333,9006.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="vIntContador" />
       </Sequence.Variables>
@@ -628,13 +628,13 @@
           <InArgument x:TypeArguments="x:Int32">0</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1007.33333333333,6180" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[vArrFiles]">
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1007.33333333333,6217.33333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[vArrFiles]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:String">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:String" Name="item" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="970.666666666667,6042" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="970.666666666667,6079.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -923,7 +923,7 @@
                   <InArgument x:TypeArguments="x:String">[path.GetFileNameWithoutExtension(item).split("\"c)(0)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="908.666666666667,320" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="908.666666666667,357.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -941,10 +941,10 @@
                   </Assign>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,175.333333333333" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -952,7 +952,7 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                       </ActivityAction.Argument>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,104.666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Error" Message="[&quot;-----El archivo con nombre: &quot;+item+&quot; no se encuentra entre los marcadores-----&quot;]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,104.666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Error" Message="[&quot;-----El archivo con nombre: &quot;+item+&quot; no se encuentra entre los marcadores, actualizar regex en flujo-----&quot;]" />
                     </ActivityAction>
                   </Catch>
                 </TryCatch.Catches>
